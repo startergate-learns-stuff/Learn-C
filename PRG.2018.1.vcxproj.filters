@@ -69,5 +69,17 @@
     <ClCompile Include="break1.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="while2.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="break2.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="codeup.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="for3.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
