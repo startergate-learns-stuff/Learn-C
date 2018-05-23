@@ -1,25 +1,19 @@
 #include <stdio.h>
 
-/*int main() {
-	int a, c;
-	char b;
-	scanf("%d%c%d", &a, &b, &c);
-	switch (b)
+int main() {
+	int a, b;
+	scanf("%d %d", &a, &b);
+	if (!(b % a))
 	{
-	case '+':
-		printf("%d", a + c);
-		break;
-	case '-':
-		printf("%d", a - c);
-		break;
-	case '*':
-		printf("%d", a * c);
-		break;
-	case '/':
-		printf("%.2f", a /(float) c);
-		break;
-	default:
-		break;
+		printf("%d*%d=%d", a, b / a, b);
+	}
+	else if (!(a % b))
+	{
+		printf("%d*%d=%d", b, a / b, a);
+	}
+	else
+	{
+		printf("none");
 	}
 	return 0;
-}*/
+}

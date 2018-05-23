@@ -27,7 +27,7 @@
 	A:
 	return 0;
 }*/
-int main() {
+/*int main() {
 	int a, b, c;
 	for (a = 1; a < 10; a++)
 	{
@@ -43,4 +43,18 @@ int main() {
 		}
 	}
 	return 0;
-}
+}*/
+/*int main() {
+	int length, whatif, i, j;
+	scanf("%d", &length); // 몇 단 까지 계산할까?
+	scanf("%d", &whatif); // whatif 변수의 배수는 출력하지 않음
+	for (i = 1; i <= length; i++)
+	{
+		for (int j = 1; j <= length; j++)
+		{
+			if (!((i * j) % whatif)) continue; //배수면 continue
+			printf("%d*%d=%d\n", i, j, i * j);
+		}
+	}
+	return 0;
+}*/
