@@ -1,19 +1,12 @@
 #include <stdio.h>
 
 int main() {
-	int a, b;
-	scanf("%d %d", &a, &b);
-	if (!(b % a))
-	{
-		printf("%d*%d=%d", a, b / a, b);
-	}
-	else if (!(a % b))
-	{
-		printf("%d*%d=%d", b, a / b, a);
-	}
-	else
-	{
-		printf("none");
-	}
+	int a;
+	scanf("%d", &a);
+	if (a >= 90) printf("A");
+	else if (a >= 80) printf("B");
+	else if (a >= 70) printf("C");
+	else if (a >= 60) printf("D");
+	else printf("F");
 	return 0;
 }
