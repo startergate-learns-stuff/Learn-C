@@ -93,5 +93,11 @@
     <ClCompile Include="arr3.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="arr4.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="arr5.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
