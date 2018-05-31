@@ -1,12 +1,19 @@
 #include <stdio.h>
-
-/*int main() {
-	int a;
+#include <string.h>
+int main() {
+	int a, cnt = 0;
+	char b[51];
 	scanf("%d", &a);
-	if (a >= 90) printf("A");
-	else if (a >= 80) printf("B");
-	else if (a >= 70) printf("C");
-	else if (a >= 60) printf("D");
-	else printf("F");
+	getchar();
+	for (size_t i = 0; i < a; i++)
+	{
+		gets("%s", b);
+		if (strlen(b) <= 3 || strchr(b, "tap") || strchr(b, "xocure"))
+		{
+			puts(b);
+			cnt++;
+		}
+	}
+	printf("%d", cnt);
 	return 0;
-}*/
+}

@@ -1,8 +1,6 @@
 #include <stdio.h>
-
-/*#include <string.h>
-
-int main() {
+#include <string.h>
+/*int main() {
 	char m[20] = { '\0' };
 	int count = 0;
 	scanf("%s", m);
@@ -22,8 +20,7 @@ int main() {
 	return 0;
 }*/
 // 거꾸로 출력
-/*#include <string.h>
-int main() {
+/*int main() {
 	char a[20] = "Multimedia", b[20] = "";
 	//size_t length = strlen(a);
 	//for (int i = 0; i < length; i++) b[i] = a[i];
@@ -32,8 +29,7 @@ int main() {
 	puts(b);
 }*/
 // a 문자열을 b 문자열로 복사
-/*#include <string.h>
-int main() {
+/*int main() {
 	char a[100], b[100];
 	//char c[20];
 	//size_t i;
@@ -49,8 +45,7 @@ int main() {
 	return 0;
 }*/
 // 문자열 합치기
-#include <string.h>
-int main() {
+/*int main() {
 	char a[10], b[10];
 	gets(a);
 	gets(b);
@@ -73,4 +68,15 @@ int main() {
 	if (k < 0) printf("%s %s", a, b);
 	else if (k > 0) printf("%s %s", b, a);
 	else printf("%s", a);
-}
+	return 0;
+}*/
+// 문자열 비교
+/*int main() {
+	char a[20], b[20];
+	gets(a);
+	gets(b);
+	if (strlen(a) > strlen(b)) printf("%s", a);
+	else if (strlen(a) < strlen(b)) printf("%s", b);
+	return 0;
+}*/
+// 시험
