@@ -1,19 +1,11 @@
 #include <stdio.h>
-#include <string.h>
-int main() {
-	int a, cnt = 0;
-	char b[51];
+/*int main() {
+	int a, sum = 1;
 	scanf("%d", &a);
-	getchar();
-	for (size_t i = 0; i < a; i++)
+	for (size_t i = a; i > 0; i--)
 	{
-		gets("%s", b);
-		if (strlen(b) <= 3 || strchr(b, "tap") || strchr(b, "xocure"))
-		{
-			puts(b);
-			cnt++;
-		}
+		sum *= a;
 	}
-	printf("%d", cnt);
+	printf("%d", sum);
 	return 0;
-}
+}*/
