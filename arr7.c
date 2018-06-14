@@ -363,3 +363,120 @@
 		printf("\n");
 	}
 }*/
+/*int main() {
+	int n, i, k;
+	char a[20] = "", b[20] = "";
+	printf("암호화 방법 선택: ");
+	scanf("%d", &n);
+	getchar();
+	switch (n)
+	{
+	case 1:
+		gets(a);
+		for (i = 0; a[i] != '\0'; i++)
+		{
+			if (a[i] >= 65 && a[i] < 91)
+			{
+				a[i] += 32;
+			}
+			printf("%c", a[i]);
+			if (a[i] <= 100 && a[i] >= 97)
+			{
+				a[i] += 23;
+			}
+			else if (a[i] > 97 && a[i] <= 122)
+			{
+				a[i] -= 3;
+			}
+		}
+		break;
+	case 2:
+		gets(b);
+		for (i = 0; a[i] != '/0'; i++)
+		{
+			if (a[i] >= 65 && a[i] < 91)
+			{
+				a[i] += 32;
+			}
+			if (a[i] >= 120 && a[i] <= 122)
+			{
+				a[i] -= 23;
+			}
+			else if (a[i] > 97 && a[i] <= 122)
+			{
+				a[i] += 3;
+			}
+		}
+		break;
+	default:
+		break;
+	}
+	puts(a);
+	puts(b);
+}*/
+/*#include <time.h>
+#include <stdlib.h>
+int main() {
+	int a[4], b[4];
+	int cnt1 = 0, cnt2 = 0, temp;
+	srand(time(0));
+	A:
+	for (int i = 3; i >= 0; i--)
+	{
+		temp = rand();
+		a[3 - i] = temp % 10;
+		temp /= 10;
+	}
+	for (int i = 0; i < 4; i++)
+	{
+		temp = a[i];
+		for (int j = i; j < 4; j++)
+		{
+			if (temp == a[j] && !(i == j)) goto A;
+		}
+	}
+	printf("%d%d%d%d", a[0], a[1], a[2], a[3]);
+	while (1)
+	{
+		cnt1 = 0;
+		cnt2 = 0;
+		B:
+		printf("입력: ");
+		scanf("%d", &temp);
+		for (int i = 3; i >= 0; i--)
+		{
+			b[i] = temp % 10;
+			temp /= 10;
+		}
+		for (int i = 0; i < 3; i++)
+		{
+			for (int j = i + 1; j < 4; j++)
+			{
+				if (b[i] == b[j] && !(i == j)) goto B;
+			}
+		}
+		for (size_t i = 0; i < 4; i++)
+		{
+			for (size_t j = i; j < 4; j++)
+			{
+				if (a[i] == b[j])
+				{
+					if (i == j)
+					{
+						cnt2++;
+					}
+					else
+					{
+						cnt1++;
+					}
+					break;
+				}
+			}
+		}
+		printf("%dS %dB\n", cnt2, cnt1);
+		if (cnt2 == 4)
+		{
+			break;
+		}
+	}
+}*/
