@@ -111,5 +111,11 @@
     <ClCompile Include="arr8.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="arr9.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="arr10.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

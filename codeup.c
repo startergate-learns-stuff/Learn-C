@@ -1,1 +1,1 @@
-main(){puts("all");}
+/*main(){puts("all");}*/
