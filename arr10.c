@@ -43,7 +43,7 @@
 	}
 	return 0;
 }*/
-int main() {
+/*int main() {
 	for (int i = 3; i <= 10000; i++)
 	{
 		int sum = 0;
@@ -59,4 +59,122 @@ int main() {
 			printf("%d\n", i);
 		}
 	}
+}*/
+/*#include <string.h>
+int main() {
+	char f[][5][10] = { { "apple","orange","banana","peach","grape" }, { "사과", "오렌지", "바나나", "복숭아", "포도"} };
+	int cnt = 0;
+	for (size_t i = 0; i < 4; i++)
+	{
+		size_t length = strlen(f[i]);
+		for (size_t j = 0; j < length; j++)
+		{
+			if (f[i][j] == (char) 'n') cnt++;
+		}
+	}
+	printf("%d\n", cnt);
+	return 0;
+}*/
+/*int main() {\
+	for (size_t i = 0; i < 5; i++)
+	{
+		for (size_t j = 0; j < 5; j++)
+		{
+			printf("%3d", i * 5 + j + 1);
+		}
+		printf("\n");
+	}
+}*/
+/*int main() {
+	int a[5][5] = { 0 }, cnt = 1;
+	for (size_t i = 0; i < 5; i++)
+	{
+		for (size_t j = 0; j < 5; j++)
+		{
+			a[j][i] = cnt++;
+		}
+	}
+	for (size_t i = 0; i < 5; i++)
+	{
+		for (size_t j = 0; j < 5; j++)
+		{
+			printf("%3d", a[i][j]);
+		}
+		printf("\n");
+	}
+	return 0;
+}*/
+/*int main() {
+	int a[5][5] = { 0 }, cnt = 1;
+	for (size_t i = 0; i < 5; i++)
+	{
+		for (size_t j = 0; j <= i; j++)
+		{
+			a[i][j] = cnt++;
+		}
+	}
+	for (size_t i = 0; i < 5; i++)
+	{
+		for (size_t j = 0; j < 5; j++)
+		{
+			printf("%3d", a[i][j]);
+		}
+		printf("\n");
+	}
+	return 0;
+}*/
+/*int main() {
+	int a[5][5] = { 0 }, cnt = 1;
+	for (size_t i = 0; i < 5; i++)
+	{
+		for (size_t j = 4 - i; j < 5; j++)
+		{
+			a[i][j] = cnt++;
+		}
+	}
+	for (size_t i = 0; i < 5; i++)
+	{
+		for (size_t j = 0; j < 5; j++)
+		{
+			printf("%3d", a[i][j]);
+		}
+		printf("\n");
+	}
+	return 0;
+}*/
+/*int main() {
+	int n;
+	scanf("%d", &n);
+	printf("%.1f\n", n * 1.609);
+	return 0;
+}*/
+/*int main() {
+	int n;
+	scanf("%d", &n);
+	printf("%.2f", n * 0.3205);
+}*/
+/*int main() {
+	for (size_t i = 2; i < 101; i++)
+	{
+		int sum = 0;
+		for (size_t j = 1; j < i; j++)
+		{
+			if (!(i % j)) sum += j;
+		}
+		if (i == sum) printf("%d\n", sum);
+	}
+	return 0;
+}*/
+int main() {
+	int max = 0, min = 100, sum = 0, n, m;
+	scanf("%d", &n);
+	for (size_t i = 0; i < n; i++)
+	{
+		scanf("%d", &m);
+		if (max < m) max = m;
+		if (min > m) min = m;
+		sum += m;
+	}
+	printf("%d, %lf", sum - max - min, (sum - max - min) / (double) (n - 2));
+	return 0;
 }
