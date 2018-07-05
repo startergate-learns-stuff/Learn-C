@@ -165,7 +165,7 @@ int main() {
 	}
 	return 0;
 }*/
-int main() {
+/*int main() {
 	int max = 0, min = 100, sum = 0, n, m;
 	scanf("%d", &n);
 	for (size_t i = 0; i < n; i++)
@@ -177,4 +177,4 @@ int main() {
 	}
 	printf("%d, %lf", sum - max - min, (sum - max - min) / (double) (n - 2));
 	return 0;
-}
+}*/
