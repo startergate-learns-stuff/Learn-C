@@ -178,3 +178,14 @@ int main() {
 	printf("%d, %lf", sum - max - min, (sum - max - min) / (double) (n - 2));
 	return 0;
 }*/
+
+int main()
+{
+	char c[100];
+	printf("암호를 대라.\n");
+	scanf("%s", c);
+	//for (int i = 0; c[i] == '/0'; i++) {
+	//	if(c[i]==호)
+	//}
+	printf("%c", c[0]);
+}
