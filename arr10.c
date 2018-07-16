@@ -179,7 +179,7 @@ int main() {
 	return 0;
 }*/
 
-int main()
+/*int main()
 {
 	char c[100];
 	printf("암호를 대라.\n");
@@ -188,4 +188,4 @@ int main()
 	//	if(c[i]==호)
 	//}
 	printf("%c", c[0]);
-}
+}*/
